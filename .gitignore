@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+redteam_env/
+venv/
+env/
+ENV/
+
+# Model files (too large for git)
+*.bin
+*.safetensors
+*.model
+*.pth
+*.pt
+
+# Data files
+processed_data/
+*.arrow
+*.json
+dataset_dict.json
+
+# Model checkpoints
+red_team_llama2/
+checkpoint-*/
+
+# Results
+results/
+*.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
