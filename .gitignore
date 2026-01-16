@@ -33,19 +33,22 @@ ENV/
 *.pth
 *.pt
 
-# Data files
-processed_data/
-*.arrow
-*.json
-dataset_dict.json
+# Data files (exclude large arrow files, keep configs)
+processed_data/**/*.arrow
+processed_data/**/data-*.arrow
+processed_data/**/cache-*.arrow
 
-# Model checkpoints
-red_team_llama2/
-checkpoint-*/
+# Model weights (exclude, but keep configs and tokenizer)
+*.safetensors
+*.bin
+*.pth
+*.pt
+!red_team_llama2/tokenizer.model
 
-# Results
-results/
-*.png
+# Results (exclude generated outputs)
+results/*.png
+results/test_results.json
+results/comparison_data.json
 
 # IDE
 .vscode/
